@@ -11,14 +11,16 @@ public class Factura {
     private List<DetalleFactura> detalles;
     private LocalDate fecha;
     private double total;
+    private int codigo;
     
     // Constructor
-    public Factura(int id, Cliente cliente, List<DetalleFactura> detalles, LocalDate fecha, double total) {
+    public Factura(int codigo, int id, Cliente cliente, List<DetalleFactura> detalles, LocalDate fecha, double total) {
         this.id = id;
         this.cliente = cliente;
         this.detalles = detalles;
         this.fecha = fecha;
         this.total = total;
+        this.codigo = codigo;
     }
     
     // Métodos
@@ -48,7 +50,17 @@ public class Factura {
         return this.total;
     }
     
-    // Agrega un nuevo detalle a la factura
+    // Devuelve el codigo de la factura
+    public int getCodigo() {
+		return codigo;
+	}
+    
+    // Establece código a la factura
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	// Agrega un nuevo detalle a la factura
     public void agregarDetalle(DetalleFactura detalle) {
         this.detalles.add(detalle);
     }
@@ -65,6 +77,6 @@ public class Factura {
     // Devuelve una representación en String de la factura
     @Override
     public String toString() {
-        return "Factura[id=" + id + ", cliente=" + cliente.getNombre() + ", fecha=" + fecha + ", total=" + total + "]";
+        return "Factura[codigo=" + codigo + ", id=" + id + ", cliente=" + cliente.getNombre() + ", fecha=" + fecha + ", total=" + total + "]";
     }
 }
