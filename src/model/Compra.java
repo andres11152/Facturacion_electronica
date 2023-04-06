@@ -59,4 +59,5 @@ public class Compra {
     public String toString() {
         return "Compra[cliente=" + cliente.getNombre() + ", fecha=" + fecha + ", total=" + total + "]";
     }
+    
 }
