@@ -1,4 +1,4 @@
-package model;
+package co.com.facturacion.model;
 
 public class DetalleFactura {
     

@@ -1,4 +1,4 @@
-package model;
+package co.com.facturacion.model;
 
 import java.time.LocalDate;
 import java.util.List;

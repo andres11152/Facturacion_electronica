@@ -1,4 +1,4 @@
-package model;
+package co.com.facturacion.model;
 
 import java.util.ArrayList;
 import java.util.Date;

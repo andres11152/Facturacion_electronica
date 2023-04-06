@@ -1,4 +1,4 @@
-package model;
+package co.com.facturacion.model;
 
 public class Cliente {
     
@@ -7,6 +7,7 @@ public class Cliente {
     private String direccion;
     private String telefono;
     private String email;
+    private int id;
     
     // Constructor
     public Cliente(String nombre, String direccion, String telefono, String email) {
@@ -52,4 +53,14 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+    
+    
 }

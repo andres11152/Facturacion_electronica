@@ -1,4 +1,4 @@
-package model;
+package co.com.facturacion.model;
 
 public class Producto {
 
@@ -7,6 +7,7 @@ public class Producto {
 	private String descripcion;
 	private double precio;
 	private int cantidadDisponible;
+	private int codigo;
 
 	// Constructor
 	public Producto(String nombre, String descripcion, double precio, int cantidadDisponible) {
@@ -32,6 +33,21 @@ public class Producto {
 	public double getPrecio() {
 		return this.precio;
 	}
+	
+	// Establece el precio del producto
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
+	// Devuelve el codidgo  del producto
+	public int getCodigo() {
+		return codigo;
+	}
+	// Establece el codigo del producto
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+	
 
 	// Devuelve la cantidad disponible del producto
 	public int getCantidadDisponible() {
